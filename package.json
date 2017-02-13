@@ -1,7 +1,7 @@
 {
   "name": "ph-boilerplate",
   "version": "1.0.0",
-  "description": "PartnerHero's Boilerplate for Web Applications",
+  "description": "Boilerplate for Web Applications",
   "main": "gulp",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
