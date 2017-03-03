@@ -1,0 +1,18 @@
+
+<section class="search-results">
+    <div class="item-list" ng-show="$root.searchResults">
+        <div class="row columns small-12">
+            <h4>Resultados</h4>
+
+            <div ng-repeat="item in $root.searchResults">
+                <result-item-directive></result-item-directive>
+            </div>
+        </div>
+    </div>
+
+    <div ng-hide="$root.searchResults">
+        <div class="row columns small-12">
+            <welcome />
+        </div>
+    </div>
+</section>

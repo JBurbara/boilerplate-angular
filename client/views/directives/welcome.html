@@ -1,0 +1,32 @@
+<section class="welcome">
+    <div class="callout large no-border">
+        <h1>Bienvenido!</h1>
+        <p>Seleccione su modelo de auto y año para poder realizar la búsqueda de repuestos.</p>
+
+        <form>
+            <div class="row">
+                <div class="medium-3 columns"></div>
+                <div class="medium-3 columns">
+                    <label>
+                        <span>Seleccione modelo:</span>
+                        <select ng-model="$root.model">
+                            <option value="">Seleccione modelo...</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Nissan">Nissan</option>
+                            <option value="Honda">Honda Dog</option>
+                            <option value="Hyundai">Hyundai</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="medium-3 columns">
+                    <label>
+                        <span>Ingrese Año:</span>
+                        <input type="number" ng-model="$root.year" />
+                    </label>
+                </div>
+                <div class="medium-3 columns"></div>
+            </div>
+        </form>
+
+    </div>
+</section>

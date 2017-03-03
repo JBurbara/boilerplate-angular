@@ -24,7 +24,8 @@ gulp.task('css', function () {
             errorHandler: notify.onError('Error: <%= error.message %>')
         }))
         .pipe(sass({
-            outputStyle: 'compressed'
+            outputStyle: 'compressed',
+            includePaths: ['node_modules/foundation-sites/scss']
         }))
         //.pipe(notify('css compiled'))
         .pipe(gulp.dest('./client/build/css'));

@@ -1,9 +1,13 @@
 
-* { margin: 0; padding: 0 }
+@import "settings";
+@import "foundation";
 
-body {
-    // This is a test
-    
-    background: white;
-    font-family: sans-serif;
-}
+@include foundation-everything;
+
+@import "./components/variables";
+@import "./components/item-list";
+@import "./components/item-entry";
+@import "./components/result-item";
+
+@import "./components/general-classes";
+

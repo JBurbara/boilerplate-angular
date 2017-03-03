@@ -17,9 +17,24 @@
     </head>
 
     <body ng-app="app">
-        <div id="content">
-            <!-- here goes the content -->
-            <div ui-view="main"></div>
+        <div id="content-wrapper">
+            <header-directive></header-directive>
+            
+            <main>
+                <div class="row">
+                    <div ui-view="main"></div>
+                </div>
+
+                <div class="reveal" id="validation-error" data-reveal>
+                    <h3>Error de validación</h3>
+                    <p>{{$root.message}}</p>
+
+                    <button class="close-button" data-close aria-label="Close modal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </main>
+            <footer></footer>
         </div>
     </body>
 

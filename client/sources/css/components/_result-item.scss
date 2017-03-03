@@ -1,0 +1,21 @@
+
+.result-item {
+    img {
+        min-width: 400px;
+        min-height: 200px;
+    }
+
+    .thumbnail {
+        overflow: hidden;
+    }
+}
+
+@media #{$small-only} {
+    .result-item .media-object-section { display: block; }
+    .result-item .text { padding-top: 1em; }
+}
+
+@media #{$medium-only} {
+    .result-item .media-object-section { display: block; }
+    .result-item .text { padding-top: 1em; }
+}
