@@ -2,7 +2,7 @@
 
 const path = require('path');
 
-const bodyParse = require('body-parser');
+const bodyParser = require('body-parser');
 const express = require('express');
 const methodOverride = require('method-override');
 const mongoose = require('mongoose');
@@ -28,5 +28,5 @@ server.use(function (err, req, res, next) {
 });
 
 mongoose.connect(config.database.url)
-    .then(() => server.listen(config.url))
+    .then(() => server.listen(config.port))
     .then(() => console.log(`Server started at port ${config.port}`));
